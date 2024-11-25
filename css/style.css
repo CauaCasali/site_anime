@@ -164,11 +164,11 @@ body.tema-escuro textarea:focus {
         /* Seção Banner */
     .banner {
         position: relative;
-        height: 400px;
+        height: 500px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        background-image: url('imagens/banner.jpg'); 
+        justify-content:flex-start;
+        background-image: url('../imagens/banner.jpg'); 
         background-size: 100% 100% ;
         color: rgb(241, 241, 241);
         text-align: center;
