@@ -8,7 +8,9 @@ O anime escolhido é Black Clover
 
 # Algumas funcionalidades 
 
-Mudança de tema - Função no css e js que implementa mudanças de tema em 
+Mudança de tema - Função no css e js que implementa mudanças de tema em claro e escuro.
+Player de Vídeo - Foi utilizado o modal para o mini player de video.
+
 
 
 
