@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Clover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tema-claro">
+    <header>
+        <img src="imagens/Phantom_Knights_logo.webp" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#intro" id="scroll-to-intro-btn">Introdução</a></li>
+                <li><a href="#characters" id="scroll-to-personagens-btn">Personagens</a></li>
+                <li><a href="#eps" id="scroll-to-episodios-btn">Episódios</a></li>
+                <li><a href="#contact" id="scroll-to-contact-btn">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-theme" class="troca-tema">🌞</button>
+    </header>
+
+    <!-- Seção do Banner-->
+    <section class="banner"></section>
+
+    <!-- Introdução ao Anime -->
+    <section class="introducao" id="intro">
+        <h2>Black Clover!</h2>
+        <p><b>Black Clover</b> é uma série de anime e mangá eletrizante que vai te prender desde o primeiro episódio! 
+            A história segue Asta, um garoto que nasceu sem magia, algo impensável em um mundo onde todos têm poderes mágicos. 
+            Mas, em vez de desistir, ele promete se tornar o "Rei Mago", o mago mais forte de todos. Ao lado de Yuno, seu amigo 
+            de infância e rival, ele embarca em uma jornada cheia de ação, batalhas épicas e muito coração. Se você curte animes 
+            com um enredo empolgante, personagens cativantes e momentos de superação,<b>Black Clover</b> é a escolha perfeita. 
+            Prepare-se para se emocionar e se impressionar com as incríveis cenas de luta e o crescimento dos protagonistas!    </p>
+    </section>
+
+    <!-- Seção de Personagens -->
+    <section id="characters" class="personagens">
+        <h2>Personagens</h2>
+        <div id="character-list" class="lista-personagens"></div>
+    </section>
+
+    <section class="episodios-favoritos" id="eps">
+        <h2>Episódios Favoritos</h2>
+        <div class="lista-episodios">
+            <div class="episodio">
+                <img src="imagens/astaeyami.jpg" alt="Episódio 162">
+                <h3>Episódio 162: Asta e Yami vs Dante</h3>
+                <p>Uma épica luta contra um grande e terrível vilão</p>
+                <button onclick="openModal('https://www.youtube.com/embed/SR9k4-7wW-U?si=aYwUVMrFrm_XRrsR&amp;start=187')">Assistir ao Trailer</button>
+            </div>
+    
+            <div class="episodio">
+                <img src="imagens/astaliebe.jpg" alt="Episódio 170">
+                <h3>Episódio 170: Asta vs Liebe</h3>
+                <p>Enquanto dentro do grimório, Liebe aparece como uma figura alta e negra com cabelos ondulados.</p>
+                <button onclick="openModal('https://www.youtube.com/embed/kg7h0ttVLFU?si=CJlnu0q43MkF9Gbq')">Assistir ao Trailer</button>
+            </div>
+    
+            <div class="episodio">
+                <img src="imagens/Licht_stabs_Julius.webp" alt="Episódio 95">
+                <h3>Episódio 95: Rei mago julius vs Licht </h3>
+                <p>A grande luda de Julius, O Rei Mago contra Licht, o Imperador elfo</p>
+                <button onclick="openModal('https://www.youtube.com/embed/0iafDVjBhJw?si=t_jw7ABOfkyw7jOI')">Assistir ao Trailer</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal para assistir ao trailer -->
+    <div id="trailer-modal" class="modal">
+        <div class="modal-conteudo">
+            <button class="close-btn">&times;</button>
+            <iframe id="video-frame" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contato">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Seu nome" required>
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+            <textarea id="message" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <!-- Modal para Trailer -->
+    <div id="video-modal" class="modal">
+        <div class="modal-conteudo">
+            <button class="fechar-btn">&times;</button>
+            <iframe id="video-frame" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
